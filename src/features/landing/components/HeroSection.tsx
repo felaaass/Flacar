@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrandEmblem } from '@/components/ui/BrandLogo';
+import { CompactLogo } from '@/components/ui/BrandLogo';
 import { buildWhatsAppUrl } from '@/config/business';
 
 export const HeroSection: React.FC = () => {
@@ -8,20 +8,8 @@ export const HeroSection: React.FC = () => {
       <div className="shell-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            <div className="inline-flex items-center gap-3.5 mb-6">
-              <BrandEmblem className="w-12 h-12 shrink-0 drop-shadow-[0_4px_16px_rgba(255,107,0,0.35)]" decorative />
-              <div className="flex flex-col">
-                <span className="font-extrabold text-[1.4rem] tracking-[0.02em] text-white leading-none">
-                  FLACAR
-                </span>
-                <div className="flex items-center gap-2 mt-1">
-                  <span className="h-[2px] w-4 bg-brand-yellow rounded-full" />
-                  <span className="text-[0.68rem] font-bold tracking-[0.25em] text-brand-orange">
-                    ENTREGAS
-                  </span>
-                  <span className="h-[2px] w-4 bg-brand-yellow rounded-full" />
-                </div>
-              </div>
+            <div className="mb-6">
+              <CompactLogo size="lg" />
             </div>
 
             <div className="pill mb-4">
@@ -64,10 +52,12 @@ export const HeroSection: React.FC = () => {
                 Coleta em até 30 min
               </span>
 
-              <div className="moto-stage h-[220px] sm:h-[260px] rounded-[22px] overflow-hidden relative grid place-items-center border border-white/[0.05]">
-                <BrandEmblem
-                  className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] relative z-10 animate-brand-in drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)]"
-                  decorative
+              <div className="moto-stage h-[220px] sm:h-[260px] rounded-[22px] overflow-hidden relative grid place-items-center border border-white/[0.05] p-4">
+                <img
+                  src="/logo-flacar.jpg"
+                  alt="Flacar Entregas"
+                  className="max-h-[190px] sm:max-h-[220px] w-auto object-contain rounded-xl drop-shadow-[0_12px_24px_rgba(0,0,0,0.45)]"
+                  loading="eager"
                 />
               </div>
 
